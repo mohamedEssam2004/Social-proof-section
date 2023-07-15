@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Josefin+Sans:wght@200;300;400;600&family=League+Spartan:wght@400;500;700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    background-repeat: no-repeat;
+}
+.container {
+    width: 100%;
+    padding: 7% 10%;
+}
+.container .info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info .text {
+    max-width: 400px;
+    flex-basis: 50%;
+}
+.info .text h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.info .text p {
+    width: 450px;
+    color: hsl(303, 10%, 53%);
+    line-height: 20px;
+    font-size: 17px;
+    font-weight: 800;
+}
+.info .rate {
+    max-width: 550px;
+    flex-basis: 50%;
+    text-align: right;
+}
+.info .rate .box-1,
+.info .rate .box-2,
+.info .rate .box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: hsl(300, 24%, 96%);
+    margin-top: 20px;
+    max-width: 410px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 60px;
+    border-radius: 6px;
+    color: hsl(300, 43%, 22%);
+}
+.info .rate .box-1 img,
+.info .rate .box-2 img,
+.info .rate .box-3 img {
+    margin-left: 3px;
+}
+.info .rate .box-1 h4,
+.info .rate .box-2 h4,
+.info .rate .box-3 h4 {
+    padding-left: 20px;
+    font-size: 16px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.info .rate .box-2 {
+    margin-left: 60px;
+    padding-right: 30px;
+}
+.info .rate .box-3 {
+    margin-left: 120px;
+}
+.testimonial {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimonial .box {
+    background-color: rgb(81, 28, 79);
+    padding: 35px 30px;
+    border-radius: 8px;
+}
+.testimonial .box .pro-info {
+    display: flex;
+    align-items: center;
+}
+.testimonial .box .profile img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.testimonial .pro-info .text h4{
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.testimonial .pro-info .text p {
+    font-size: 15px;
+    font-weight: 500;
+    color: hsl(333, 80%, 67%);
+    margin-top: 3px;
+}
+.testimonial .profile p {
+    max-width: 280px;
+    opacity: .9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    line-height: 20px;
+}
+.testimonial .second {
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.testimonial .third {
+    margin-top: 40px;
+    margin-bottom: -40px;
+}
+
+
+
+@media (max-width: 767px) {
+    .container {
+        padding: 70px 20px 30px 20px;
+    }
+    .container .info {
+        display: block;
+        text-align: center;
+    }
+    .info .text {
+        max-width: 200px;
+        flex-basis: 100%;
+    }
+    .info .text h1 {
+        width: 300px;
+        font-size: 35px;
+        margin: 15px auto;
+        margin-left: 15px;
+    }
+
+
+    .info .text p {
+        width: 330px;
+        margin-bottom: 40px;
+    }
+
+
+
+    .info .rate {
+        max-width: 400px;
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .info .rate .box-1,
+    .info .rate .box-2,
+    .info .rate .box-3 {
+        flex-direction: column;
+        padding-right: 30px;
+    }
+    .info .rate .box-1 h4,
+    .info .rate .box-2 h4,
+    .info .rate .box-3 h4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .info .rate .box-1 {
+        padding-right: 40px;
+    }
+    .info .rate .box-2 {
+        margin-left: 0px;
+        padding-right: 40px;
+    }
+    .info .rate .box-3 {
+        margin-left: 0;
+        padding-right: 40px;
+    }
+
+
+
+    .testimonial {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 90px;
+    }
+    .testimonial .box {
+        padding: 30px 40px 20px 30px;
+    }
+    .testimonial .profile p {
+        width: 100%;
+        max-width: 350px;
+        font-size: 15px;
+    }
+    .testimonial .second {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .testimonial .third {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
